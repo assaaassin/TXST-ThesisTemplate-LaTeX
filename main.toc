@@ -1,0 +1,13 @@
+\contentsline {part}{ACKNOWLEDGEMENTS}{v}{dummy.4}%
+\contentsline {part}{LIST OF TABLES}{vii}{dummy.6}%
+\contentsline {part}{LIST OF FIGURES}{viii}{dummy.7}%
+\contentsline {part}{ABSTRACT}{ix}{section*.4}%
+\cftpagenumbersoff {part}
+\contentsline {part}{CHAPTER}{1}{section*.4}%
+\contentsline {chapter}{\numberline {I}CHAPTER 1 TITTLE}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {II}CHAPTER 2 TITTLE}{3}{chapter.2}%
+\contentsline {section}{Section 1}{3}{chapter.2}%
+\contentsline {section}{Section 2}{5}{figure.caption.8}%
+\cftpagenumberson {part}
+\contentsline {part}{APPENDIX SECTION}{6}{chapter*.9}%
+\contentsline {part}{REFERENCES}{9}{dummy.8}%

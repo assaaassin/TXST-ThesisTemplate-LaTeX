@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: Config/Titlepage.aux
+A level-1 auxiliary file: Config/Copyright.aux
+A level-1 auxiliary file: Config/FairUse.aux
+A level-1 auxiliary file: Config/Dedication.aux
+A level-1 auxiliary file: Config/Acknowledgements.aux
+A level-1 auxiliary file: Config/Contents.aux
+A level-1 auxiliary file: Config/Abstract.aux
+A level-1 auxiliary file: Chapters/Chapter1.aux
+A level-1 auxiliary file: Chapters/Chapter2.aux
+A level-1 auxiliary file: Chapters/Appendix.aux
+The style file: ieeetr.bst
+Database file #1: ./Bib/References.bib
+You've used 3 entries,
+            1876 wiz_defined-function locations,
+            511 strings with 4454 characters,
+and the built_in function-call counts, 1293 in all, are:
+= -- 114
+> -- 76
+< -- 0
++ -- 26
+- -- 23
+* -- 109
+:= -- 195
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 57
+empty$ -- 102
+format.name$ -- 23
+if$ -- 300
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 12
+num.names$ -- 5
+pop$ -- 9
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 45
+stack$ -- 0
+substring$ -- 100
+swap$ -- 29
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 12
+width$ -- 4
+write$ -- 33
