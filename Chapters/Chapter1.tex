@@ -1,55 +1,27 @@
 \addtocontents{toc}{\cftpagenumbersoff{part}}
 \addcontentsline{toc}{part}{CHAPTER}
 
-\chapter{CHAPTER 1 TITTLE}\label{ch:chapter1}
+\chapter{Introduction}\label{ch:chapter1}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in venenatis ligula, eget congue turpis. Praesent ante quam, facilisis at magna sed, lacinia iaculis eros. Aenean id dui augue. Aenean in nibh sollicitudin erat accumsan venenatis id eget magna. Maecenas in metus lorem. Pellentesque id accumsan urna, faucibus volutpat arcu. Fusce tempor lectus quis purus accumsan malesuada.
-
-
-% SAMPLE TABLE
-% Caption of tables must be at the top. 
-% Only the first sentence of the caption should show up in the table of contents
-% Caption format: % \caption[first sentence only]{entire description}
-\begin{table}[ht]
-\caption 
-[First table phasellus at magna interdum, mattis tellus vitae, varius sapien pellentesque auctor neque ante, sit amet posuere nibh cursus vel]
-{First table phasellus at magna interdum, mattis tellus vitae, varius sapien pellentesque auctor neque ante, sit amet posuere nibh cursus vel. Phasellus sed lacinia leo. Only the first sentence of the images and tables should show up in the tables of contents.}
-\centering
-\fontsize{10}{12}\selectfont
-\begin{tabular}{|l|r|r|}
-\hline
-Dataset name & Number of records  & Number of users \\
-\hline 
-Dataset A & 248 & 20 \\
-\hline
-Dataset B & 464 & 28 \\
-\hline
-Dataset C & 348 & 7 \\
-\hline
-Dataset D & 419 & 5\\
-\hline
-Dataset E & 854 & 15\\
-\hline
-\end{tabular}
-\label{tab:table1}
-\end{table}
-
-
-Curabitur vel nisi aliquam, faucibus est sed, semper mi. Praesent eget suscipit lacus. Maecenas fringilla erat vitae tortor imperdiet, eu interdum est molestie. Sed aliquet interdum magna non venenatis. Proin ut elit porta, tincidunt mauris quis, condimentum mauris. Sed in nisi non sem fringilla pharetra. Sed lacinia convallis libero a ultricies. Curabitur varius blandit dui. Cras tempus dignissim elementum. Sed nisl libero, efficitur et nisl nec, fringilla varius libero. Aenean eu dictum nunc, ac convallis turpis. Donec convallis tortor in lectus rhoncus, ac laoreet arcu convallis. Phasellus at magna interdum, mattis tellus vitae, varius sapien. Pellentesque auctor neque ante, sit amet posuere nibh cursus vel. Phasellus sed lacinia leo.
-
-
-% SAMPLE IMAGE
-% Caption of figures must be at the bottom. 
-% Only the first sentence of the caption should show up in the table of contents
-% Caption format: % \caption[first sentence only]{entire description}
-\begin{figure}[!ht]
-\centering
-\includegraphics[scale=0.6]{Figs/Fig1.jpg}
-\caption[First image phasellus at magna interdum, mattis tellus vitae, varius sapien pellentesque auctor neque ante, sit amet posuere nibh cursus vel]
-{First image phasellus at magna interdum, mattis tellus vitae, varius sapien pellentesque auctor neque ante, sit amet posuere nibh cursus vel. Phasellus sed lacinia leo. Only the first sentence of the images and tables should show up in the tables of contents.}
-\label{fig:figure1}
-\end{figure}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed est bibendum, vestibulum enim ac, mattis turpis. Maecenas blandit dui a dui fermentum venenatis. Maecenas posuere augue sed porttitor posuere. Donec vitae tortor faucibus, luctus urna vitae, hendrerit massa. Cras ac dui dui. Etiam euismod vehicula metus, sit amet ultricies massa blandit vitae. Aliquam sodales tempor lorem, ac venenatis diam convallis id. Maecenas ornare vulputate tellus et volutpat. Fusce vehicula nisi ac lorem varius bibendum. Pellentesque viverra ultricies libero, a malesuada augue ultricies nec.
-
-Curabitur vel nisi aliquam, faucibus est sed, semper mi. Praesent eget suscipit lacus. Maecenas fringilla erat vitae tortor imperdiet, eu interdum est molestie. Sed aliquet interdum magna non venenatis. Proin ut elit porta, tincidunt mauris quis, condimentum mauris. Sed in nisi non sem fringilla pharetra. Sed lacinia convallis libero a ultricies. Curabitur varius blandit dui. Cras tempus dignissim elementum. Sed nisl libero, efficitur et nisl nec, fringilla varius libero. Aenean eu dictum nunc, ac convallis turpis. Donec convallis tortor in lectus rhoncus, ac laoreet arcu convallis. Phasellus at magna interdum, mattis tellus vitae, varius sapien. Pellentesque auctor neque ante, sit amet posuere nibh cursus vel. Phasellus sed lacinia leo.
+In the past couple of years, IoT has made significant progress. From personal devices 
+such as smartwatches and environment like smart homes, to industrially scaling projects 
+like smart cities and smart, autonomous cars. There has been an extensive application of 
+IoT edge devices to an extent that today, a considerably significant amount of people possess 
+at least one such device \textemdash be it your smart car or a smartwatch that you regularly 
+or routinely use. \\
+Recent advances in the world of IoT have increased the amount of use cases that these 
+personal devices such as smartwatches have. But having additional functionality also poses 
+the problem of increased energy consumption on devices already constrained by limited battery. 
+For example, a device logging sensor data, say temperature, in real-time is bound to use 
+more energy if it starts logging data from a motion sensor as well. \\
+This work studies the possibility of optimizing energy consumption for edge IoT devices 
+by aiding the programmer in setting parameters that would ultimately lead to lesser energy 
+consumption. We aim to focus on optimizing the communication cost of applications by determining 
+the optimal chunk size, with which the data should be transferred. It also involves a case study 
+comparing energy consumption of native app and the same app running in a container environment 
+such as Docker (cite here). \\
+There has been an extensive amount of work on energy optimization \textemdash both without 
+and in an IoT setting. Xiao et al. \cite{4756414} compared 3G and Wi-fi while Balasubramanian 
+et al. (cite here) compared GSM, 3G and Wi-Fi with respect to energy consumption. However, 
+neither of them compared energy consumption of respective data transfer technologies 
+for throughput efficiency for the same task. \\
