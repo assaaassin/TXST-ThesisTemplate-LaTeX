@@ -25,3 +25,50 @@ and in an IoT setting. Xiao et al. \cite{4756414} compared 3G and Wi-fi while Ba
 et al. (cite here) compared GSM, 3G and Wi-Fi with respect to energy consumption. However, 
 neither of them compared energy consumption of respective data transfer technologies 
 for throughput efficiency for the same task. \\
+Gupta et al. (cite here) made a measurement study of energy consumption when using VoIP applications 
+with Wi-Fi connection in smartphones and showed that power saving mode in Wi-Fi together with 
+intelligent scanning techniques can reduce energy consumption. Xiao et al. (cite here) measured 
+energy consumption for video streaming on mobile apps and concluded that Wi-Fi is more 
+efficient than 3G. There are other measurement studies as well which compare different modes 
+of communication but none of them discuss energy consumption differences for different packet 
+sizes. \\
+The work that seems the most related to ours is by Friedman et al. (cite here) where they measured 
+power and throughput performance of Bluetooth and Wi-Fi usage in smartphones. They concluded that 
+power consumption is generally linear with the obtained throughput, and Bluetooth uses less 
+energy than Wi-Fi. However, this study also showed that different hardware and different software 
+have different results and there is no generic trend. They also concluded that an upper bound 
+does exist, bottlenecked by the receiver, after which the sender expends more power 
+retransmitting packets. This dependency of energy consumption on software is also discussed by 
+Flinn and Satyanarayanan (cite here) who point out that \textquotedblleft \textit{There is growing 
+consensus that advances in battery technology and low-power circuit design cannot, by themselves, 
+meet the energy needs of future movile computers} \textquotedblright (cite here). This observation 
+has been confirmed by recent advances in green software engineering, which demonstrated how the 
+source of energy leaks can be software-related as well (cite here). \\
+Our work on the other hand, considers multiple constraints in real-world IoT setting. Firstly, 
+the transmission is not always continuous. The data may be communicated in regular or irregular 
+intervals. Secondly, the amount of data to send depends on the amount of data collected by 
+the sensors which may vary based on different applications. Thirdly, since the transmission may 
+not be continuous, if the app demands it, based off energy consumption data from different chunk 
+sizes, an optimal communication interval can be set to reduce the amount of buffering required 
+(if needed). Lastly, unique apps on different devices with different operating systems will have 
+their own optimal throughput efficiency for energy consumption. Given the hardware configuration 
+of such a device, our tool can determine the optimal chunk size for data transfer with respect 
+to energy consumption. \\
+\subsection{Contributions}
+This thesis has the following contributions. It: 
+\begin{itemize}
+    \item proposes a method to estimate energy consumption of edge IoT devices 
+    \item proposes a new approach to reduce energy consumption with the help of optimal chunk size
+    \item presents a new metric called Energy-Per-Byte or EPB
+    \item discusses a case study to compare energy consumption between native, Lingua Franca 
+    and container version of the same app.
+    \item evaluates the effectiveness of this approach on two real-world applications of different domains.
+\end{itemize}
+
+The organization of the rest of the thesis as as follows. In chapter II, we will provide 
+background information about edge IoT devices, energy usage and estimation, containers and middlware 
+accessor frameworks. In chapter III, we briefly sumarize the related work and chapter IV will discuss 
+our methodology in detail. In chapter V, we will discuss our evaluation and results, and provide 
+our reasoning. Chapter VI, will discuss the case study of energy cost comparison between native, 
+Lingua Franca and Docker version of the same application and finally in chapter VII, we will conclude 
+our thesis and discuss possible future work.
