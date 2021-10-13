@@ -1,20 +1,55 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{SciPyProceedings_11}
-A.~A. Hagberg, D.~A. Schult, and P.~J. Swart, ``Exploring network structure,
-  dynamics, and function using networkx,'' in {\em Proceedings of the 7th
-  Python in Science Conference} (G.~Varoquaux, T.~Vaught, and J.~Millman,
-  eds.), (Pasadena, CA USA), pp.~11 -- 15, 2008.
+\bibitem{4756414}
+Y.~Xiao, R.~S. Kalyanaraman, and A.~Yla-Jaaski, ``Energy consumption of mobile
+  youtube: Quantitative measurement and analysis,'' in {\em 2008 The Second
+  International Conference on Next Generation Mobile Applications, Services,
+  and Technologies}, pp.~61--69, 2008.
 
-\bibitem{scikit-learn}
-F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
-  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
-  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay, ``Scikit-learn:
-  Machine learning in {P}ython,'' {\em Journal of Machine Learning Research},
-  vol.~12, pp.~2825--2830, 2011.
+\bibitem{8123913}
+W.~Yu, F.~Liang, X.~He, W.~G. Hatcher, C.~Lu, J.~Lin, and X.~Yang, ``A survey
+  on the edge computing for the internet of things,'' {\em IEEE Access},
+  vol.~6, pp.~6900--6919, 2018.
 
-\bibitem{von2007tutorial}
-U.~Von~Luxburg, ``A tutorial on spectral clustering,'' {\em Statistics and
-  computing}, vol.~17, no.~4, pp.~395--416, 2007.
+\bibitem{7598173}
+D.~Linthicum, ``Responsive data architecture for the internet of things,'' {\em
+  Computer}, vol.~49, no.~10, pp.~72--75, 2016.
+
+\bibitem{7879243}
+J.~Lin, W.~Yu, N.~Zhang, X.~Yang, H.~Zhang, and W.~Zhao, ``A survey on internet
+  of things: Architecture, enabling technologies, security and privacy, and
+  applications,'' {\em IEEE Internet of Things Journal}, vol.~4, no.~5,
+  pp.~1125--1142, 2017.
+
+\bibitem{6774858}
+J.~A. Stankovic, ``Research directions for the internet of things,'' {\em IEEE
+  Internet of Things Journal}, vol.~1, no.~1, pp.~3--9, 2014.
+
+\bibitem{10.1145/2872332}
+J.~Wu and W.~Zhao, ``Design and realization of winternet: From net of things to
+  internet of things,'' {\em ACM Trans. Cyber-Phys. Syst.}, vol.~1, Nov. 2016.
+
+\bibitem{8058399}
+S.~Vashi, J.~Ram, J.~Modi, S.~Verma, and C.~Prakash, ``Internet of things
+  (iot): A vision, architectural elements, and security issues,'' in {\em 2017
+  International Conference on I-SMAC (IoT in Social, Mobile, Analytics and
+  Cloud) (I-SMAC)}, pp.~492--496, 2017.
+
+\bibitem{7568592}
+W.~Yu, H.~Xu, H.~Zhang, D.~Griffith, and N.~Golmie, ``Ultra-dense networks:
+  Survey of state of the art and future directions,'' in {\em 2016 25th
+  International Conference on Computer Communication and Networks (ICCCN)},
+  pp.~1--10, 2016.
+
+\bibitem{7414384}
+M.~Agiwal, A.~Roy, and N.~Saxena, ``Next generation 5g wireless networks: A
+  comprehensive survey,'' {\em IEEE Communications Surveys Tutorials}, vol.~18,
+  no.~3, pp.~1617--1655, 2016.
+
+\bibitem{6568922}
+P.~Demestichas, A.~Georgakopoulos, D.~Karvounas, K.~Tsagkaris, V.~Stavroulaki,
+  J.~Lu, C.~Xiong, and J.~Yao, ``5g on the horizon: Key challenges for the
+  radio-access network,'' {\em IEEE Vehicular Technology Magazine}, vol.~8,
+  no.~3, pp.~47--53, 2013.
 
 \end{thebibliography}
