@@ -1,5 +1,26 @@
 \begin{thebibliography}{10}
 
+\bibitem{9017997}
+S.~Pasricha, R.~Ayoub, M.~Kishinevsky, S.~K. Mandal, and U.~Y. Ogras, ``A
+  survey on energy management for mobile and iot devices,'' {\em IEEE Design
+  Test}, vol.~37, no.~5, pp.~7--24, 2020.
+
+\bibitem{6972472}
+M.~Schuchhardt, S.~Jha, R.~Ayoub, M.~Kishinevsky, and G.~Memik, ``Caped:
+  Context-aware personalized display brightness for mobile devices,'' in {\em
+  2014 International Conference on Compilers, Architecture and Synthesis for
+  Embedded Systems (CASES)}, pp.~1--10, 2014.
+
+\bibitem{7006378}
+E.~Latronico, E.~A. Lee, M.~Lohstroh, C.~Shaver, A.~Wasicek, and M.~Weber, ``A
+  vision of swarmlets,'' {\em IEEE Internet Computing}, vol.~19, no.~2,
+  pp.~20--28, 2015.
+
+\bibitem{9446337}
+A.~H. Ngu, J.~Eyitayo, G.~Yang, C.~Campbell, Q.~Z. Sheng, and J.~Ni, ``An iot
+  edge computing framework using cordova accessor host,'' {\em IEEE Internet of
+  Things Journal}, pp.~1--1, 2021.
+
 \bibitem{4756414}
 Y.~Xiao, R.~S. Kalyanaraman, and A.~Yla-Jaaski, ``Energy consumption of mobile
   youtube: Quantitative measurement and analysis,'' in {\em 2008 The Second
@@ -51,5 +72,159 @@ P.~Demestichas, A.~Georgakopoulos, D.~Karvounas, K.~Tsagkaris, V.~Stavroulaki,
   J.~Lu, C.~Xiong, and J.~Yao, ``5g on the horizon: Key challenges for the
   radio-access network,'' {\em IEEE Vehicular Technology Magazine}, vol.~8,
   no.~3, pp.~47--53, 2013.
+
+\bibitem{power}
+A.~Aalsaud, R.~Shafik, A.~Rafiev, F.~Xia, S.~Yang, and A.~Yakovlev,
+  ``Power--aware performance adaptation of concurrent applications in
+  heterogeneous many-core systems:,'' pp.~368--373, 08 2016.
+
+\bibitem{7851469}
+R.~Cochran, C.~Hankendi, A.~K. Coskun, and S.~Reda, ``Pack amp; cap: Adaptive
+  dvfs and thread packing under power caps,'' in {\em 2011 44th Annual IEEE/ACM
+  International Symposium on Microarchitecture (MICRO)}, pp.~175--185, 2011.
+
+\bibitem{4838819}
+G.~Dhiman and T.~S. Rosing, ``System-level power management using online
+  learning,'' {\em IEEE Transactions on Computer-Aided Design of Integrated
+  Circuits and Systems}, vol.~28, no.~5, pp.~676--689, 2009.
+
+\bibitem{5751506}
+P.~Bogdan and R.~Marculescu, ``Workload characterization and its impact on
+  multicore platform design,'' in {\em 2010 IEEE/ACM/IFIP International
+  Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS)},
+  pp.~231--240, 2010.
+
+\bibitem{dypo}
+U.~Gupta, C.~Patil, G.~Bhat, P.~Mishra, and U.~Ogras, ``Dypo: Dynamic
+  pareto-optimal configuration selection for heterogeneous mpsocs,'' {\em ACM
+  Transactions on Embedded Computing Systems}, vol.~16, pp.~1--20, 09 2017.
+
+\bibitem{7092630}
+Z.~Chen and D.~Marculescu, ``Distributed reinforcement learning for power
+  limited many-core system performance optimization,'' in {\em 2015 Design,
+  Automation Test in Europe Conference Exhibition (DATE)}, pp.~1521--1526,
+  2015.
+
+\bibitem{7163527}
+F.~M. M.~u. Islam and M.~Lin, ``Hybrid dvfs scheduling for real-time systems
+  based on reinforcement learning,'' {\em IEEE Systems Journal}, vol.~11,
+  no.~2, pp.~931--940, 2017.
+
+\bibitem{8449105}
+Q.~Zhang, M.~Lin, L.~T. Yang, Z.~Chen, S.~U. Khan, and P.~Li, ``A double deep
+  q-learning model for energy-efficient edge scheduling,'' {\em IEEE
+  Transactions on Services Computing}, vol.~12, no.~5, pp.~739--749, 2019.
+
+\bibitem{8607043}
+U.~Gupta, S.~K. Mandal, M.~Mao, C.~Chakrabarti, and U.~Y. Ogras, ``A deep
+  q-learning approach for dynamic management of heterogeneous processors,''
+  {\em IEEE Computer Architecture Letters}, vol.~18, no.~1, pp.~14--17, 2019.
+
+\bibitem{DBLP:journals/corr/abs-1011-0686}
+S.~Ross, G.~J. Gordon, and J.~A. Bagnell, ``No-regret reductions for imitation
+  learning and structured prediction,'' {\em CoRR}, vol.~abs/1011.0686, 2010.
+
+\bibitem{7934357}
+R.~G. Kim, W.~Choi, Z.~Chen, J.~R. Doppa, P.~P. Pande, D.~Marculescu, and
+  R.~Marculescu, ``Imitation learning for dynamic vfi control in large-scale
+  manycore systems,'' {\em IEEE Transactions on Very Large Scale Integration
+  (VLSI) Systems}, vol.~25, no.~9, pp.~2458--2471, 2017.
+
+\bibitem{8770273}
+S.~K. Mandal, G.~Bhat, C.~A. Patil, J.~R. Doppa, P.~P. Pande, and U.~Y. Ogras,
+  ``Dynamic resource management of heterogeneous mobile platforms via imitation
+  learning,'' {\em IEEE Transactions on Very Large Scale Integration (VLSI)
+  Systems}, vol.~27, no.~12, pp.~2842--2854, 2019.
+
+\bibitem{7544394}
+X.~Chen, J.~Mao, J.~Gao, K.~W. Nixon, and Y.~Chen, ``Morph: Mobile
+  oled-friendly recording and playback system for low power video streaming,''
+  in {\em 2016 53nd ACM/EDAC/IEEE Design Automation Conference (DAC)},
+  pp.~1--6, 2016.
+
+\bibitem{Dong2009PowersavingCT}
+M.~Dong, Y.-S.~K. Choi, and L.~Zhong, ``Power-saving color transformation of
+  mobile graphical user interfaces on oled-based displays,'' in {\em ISLPED},
+  2009.
+
+\bibitem{187123}
+X.~Chen, K.~W. Nixon, H.~Zhou, Y.~Liu, and Y.~Chen, ``Fingershadow: An {OLED}
+  power optimization based on smartphone touch interactions,'' in {\em 6th
+  Workshop on Power-Aware Computing and Systems (HotPower 14)}, (Broomfield,
+  CO), {USENIX} Association, Oct. 2014.
+
+\bibitem{enloc}
+I.~Constandache, S.~Gaonkar, M.~Sayler, R.~Choudhury, and L.~Cox, ``Enloc:
+  Energy-efficient localization for mobile phones,'' pp.~2716 -- 2720, 05 2009.
+
+\bibitem{ener}
+K.~Lin, A.~Kansal, D.~Lymberopoulos, and F.~Zhao, ``Energy-accuracy trade-off
+  for continuous mobile device location,'' pp.~285--298, 01 2010.
+
+\bibitem{min}
+R.~Krashinsky and H.~Balakrishnan, ``Minimizing energy for wireless web access
+  with bounded slowdown,'' {\em Wireless Networks}, vol.~11, 09 2002.
+
+\bibitem{delay}
+M.-R. Ra, J.~Paek, A.~Sharma, R.~Govindan, M.~Krieger, and M.~Neely,
+  ``Energy-delay tradeoffs in smartphone applications,'' pp.~255--270, 06 2010.
+
+\bibitem{194920}
+B.~Kellogg, V.~Talla, S.~Gollakota, and J.~R. Smith, ``Passive wi-fi: Bringing
+  low power to wi-fi transmissions,'' in {\em 13th {USENIX} Symposium on
+  Networked Systems Design and Implementation ({NSDI} 16)}, (Santa Clara, CA),
+  pp.~151--164, {USENIX} Association, Mar. 2016.
+
+\bibitem{180309}
+F.~Lu, G.~M. Voelker, and A.~C. Snoeren, ``Slomo: Downclocking wifi
+  communication,'' in {\em 10th {USENIX} Symposium on Networked Systems Design
+  and Implementation ({NSDI} 13)}, (Lombard, IL), pp.~255--258, {USENIX}
+  Association, Apr. 2013.
+
+\bibitem{7266864}
+C.~Chou, P.~Nair, and M.~K. Qureshi, ``Reducing refresh power in mobile devices
+  with morphable ecc,'' in {\em 2015 45th Annual IEEE/IFIP International
+  Conference on Dependable Systems and Networks}, pp.~355--366, 2015.
+
+\bibitem{erdos}
+N.~Vallina-Rodriguez and J.~Crowcroft, ``Erdos: achieving energy savings in
+  mobile os,'' 01 2011.
+
+\bibitem{mob}
+A.~Javed, M.~Shahid, M.~Sharif, and Y.~Mussarat, ``Energy consumption in mobile
+  phones,'' {\em International Journal of Computer Network and Information
+  Security}, vol.~9, pp.~18--28, 12 2017.
+
+\bibitem{powerscope}
+J.~Flinn and M.~Satyanarayanan, ``Powerscope: a tool for profiling the energy
+  usage of mobileapplications,'' pp.~2--10, 03 1999.
+
+\bibitem{8360360}
+N.~G. Bachiega, P.~S.~L. Souza, S.~M. Bruschi, and S.~d. R.~S. de~Souza,
+  ``Container-based performance evaluation: A survey and challenges,'' in {\em
+  2018 IEEE International Conference on Cloud Engineering (IC2E)},
+  pp.~398--403, 2018.
+
+\bibitem{turnbull_2014}
+J.~Turnbull, {\em The Docker Book}.
+\newblock s.n., 2014.
+
+\bibitem{6903537}
+R.~Dua, A.~R. Raja, and D.~Kakadia, ``Virtualization vs containerization to
+  support paas,'' in {\em 2014 IEEE International Conference on Cloud
+  Engineering}, pp.~610--614, 2014.
+
+\bibitem{perfcont}
+S.~Olabiyisi, E.~Omidiora, F.~Uzoka, and B.~Akinnuwesi, ``A survey of
+  performance evaluation models for distributed software system architecture,''
+  10 2010.
+
+\bibitem{cordovahost}
+``Cordovahost.''
+
+\bibitem{7582463}
+A.~H. Ngu, M.~Gutierrez, V.~Metsis, S.~Nepal, and Q.~Z. Sheng, ``Iot
+  middleware: A survey on issues and enabling technologies,'' {\em IEEE
+  Internet of Things Journal}, vol.~4, no.~1, pp.~1--20, 2017.
 
 \end{thebibliography}
