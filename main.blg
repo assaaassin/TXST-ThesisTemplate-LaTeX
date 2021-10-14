@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Config/Titlepage.aux
@@ -26,45 +26,47 @@ Warning--empty booktitle in delay
 Warning--empty journal in erdos
 Warning--empty booktitle in powerscope
 Warning--empty booktitle in perfcont
-You've used 45 entries,
+Warning--empty booktitle in energest
+Warning--all relevant fields are empty in cypress
+You've used 51 entries,
             1876 wiz_defined-function locations,
-            741 strings with 12538 characters,
-and the built_in function-call counts, 13830 in all, are:
-= -- 1256
-> -- 620
+            766 strings with 13325 characters,
+and the built_in function-call counts, 15362 in all, are:
+= -- 1392
+> -- 681
 < -- 0
-+ -- 223
-- -- 178
-* -- 1034
-:= -- 1922
-add.period$ -- 45
-call.type$ -- 45
-change.case$ -- 44
++ -- 246
+- -- 195
+* -- 1139
+:= -- 2122
+add.period$ -- 50
+call.type$ -- 51
+change.case$ -- 49
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 729
-empty$ -- 1321
-format.name$ -- 178
-if$ -- 3415
+cite$ -- 60
+duplicate$ -- 807
+empty$ -- 1480
+format.name$ -- 195
+if$ -- 3798
 int.to.chr$ -- 0
-int.to.str$ -- 45
-missing$ -- 45
-newline$ -- 139
-num.names$ -- 44
-pop$ -- 195
+int.to.str$ -- 51
+missing$ -- 49
+newline$ -- 157
+num.names$ -- 49
+pop$ -- 221
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 499
+skip$ -- 567
 stack$ -- 0
-substring$ -- 906
-swap$ -- 293
+substring$ -- 1008
+swap$ -- 324
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 7
-while$ -- 118
-width$ -- 47
-write$ -- 429
-(There were 7 warnings)
+warning$ -- 9
+while$ -- 131
+width$ -- 53
+write$ -- 477
+(There were 9 warnings)
