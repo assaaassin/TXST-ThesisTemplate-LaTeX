@@ -23,9 +23,11 @@ A.~H. Ngu, J.~Eyitayo, G.~Yang, C.~Campbell, Q.~Z. Sheng, and J.~Ni, ``An iot
 
 \bibitem{gpio}
 ``Gpio extension board.''
+  \url{https://docs.sunfounder.com/projects/davinci-kit/en/latest/gpio_extension_board.html}.
 
 \bibitem{circuit}
 ``Gpio dht circuit.''
+  \url{https://docs.sunfounder.com/projects/davinci-kit/en/latest/2.2.3_dht-11.html}.
 
 \bibitem{4756414}
 Y.~Xiao, R.~S. Kalyanaraman, and A.~Yla-Jaaski, ``Energy consumption of mobile
@@ -227,6 +229,7 @@ S.~Olabiyisi, E.~Omidiora, F.~Uzoka, and B.~Akinnuwesi, ``A survey of
 
 \bibitem{cordovahost}
 ``Cordovahost.''
+  \url{https://wiki.eecs.berkeley.edu/accessors/Main/CordovaHost}.
 
 \bibitem{7582463}
 A.~H. Ngu, M.~Gutierrez, V.~Metsis, S.~Nepal, and Q.~Z. Sheng, ``Iot
@@ -239,7 +242,19 @@ M.~Lohstroh, C.~Menard, S.~Bateni, and E.~Lee, ``Toward a lingua franca for
   Computing Systems}, vol.~20, pp.~1--27, 05 2021.
 
 \bibitem{lf-lang}
-Lf-Lang, ``Overview · lf-lang/lingua-franca wiki.''
+Lf-Lang, ``lingua-franca wiki.''
+  \url{https://github.com/lf-lang/lingua-franca/wiki/Overview}.
+
+\bibitem{confbal}
+N.~Balasubramanian, A.~Balasubramanian, and A.~Venkataramani, ``Energy
+  consumption in mobile phones: a measurement study and implications for
+  network applications.,'' pp.~280--293, 2009.
+
+\bibitem{4292824}
+A.~Gupta and P.~Mohapatra, ``Energy consumption and conservation in wifi based
+  phones: A measurement-based study,'' in {\em 2007 4th Annual IEEE
+  Communications Society Conference on Sensor, Mesh and Ad Hoc Communications
+  and Networks}, pp.~122--131, 2007.
 
 \bibitem{6200281}
 R.~Friedman, A.~Kogan, and Y.~Krivolapov, ``On power and throughput tradeoffs
@@ -257,13 +272,13 @@ A.~Sabovic, C.~Delgado, J.~Bauwens, E.~De~Poorter, and J.~Famaey, ``Accurate
   pp.~363--373, 11 2019.
 
 \bibitem{cypress}
-
+``Bcm43455 data sheet.'' \url{https://www.cypress.com/file/298786/download}.
 
 \bibitem{wiring}
-``Reference: Wiring pi,'' May 2013.
+``Reference: Wiring pi.'' \url{http://wiringpi.com/reference/}, May 2013.
 
 \bibitem{pypi}
-``Rpi.gpio.''
+``Rpi.gpio.'' \url{https://pypi.org/project/RPi.GPIO/}.
 
 \bibitem{falld}
 T.~Mauldin, M.~Canby, V.~Metsis, A.~Ngu, and C.~Rivera, ``Smartfall: A

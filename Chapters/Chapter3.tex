@@ -1,3 +1,25 @@
 \chapter{Related Work}
 % \label{ch:relatedwork}
-
+This section will discuss some of the related work to this thesis. There has been an extensive amount of work 
+on energy optimization - both in and outside of IoT environment. Xiao et al. \cite{4756414} compared 3G and Wi-Fi 
+technologies in terms of energy consumption. It answered some of the very first basic questions as to what are the 
+factors that influence energy consumption? Therefore, it compared progressive download vs traditional TCP download-and-play, 
+WCDMA vs WLAN 802.11g and phone memory vs external flash drive vs cache. It answered some important questions 
+such as WLAN being more energy efficient than WCDMA, and the energy consumption of youtube video playback being 
+dependent on the amount of video being loaded into cache. However, it failed to adapt to network conditions. Moreover, 
+it was more about the comparison of resources used for video streaming as a whole rather than just the communication aspect of it. 
+Our work on the other hand compares energy consumption under the same communication protocol i.e. TCP/IP for different 
+chunk sizes. \\
+Balasubramanian et al. \cite{confbal} compared GSM, 3G and Wi-Fi in terms of energy consumption and for each of them, 
+developed a model for energy consumed by network activity. Using this model, they developed TailEnder, which was a 
+protocol to reduce energy consumption for mobile phone apps. The main idea behind it was to schedule tasks that 
+could tolerate a little bit of delay to reduce the overall cumulative energy expended. It also concluded that Wi-Fi 
+was the most efficient of them all for different data transfer sizes as compared to 3G. However, it did not account for 
+the differences between energy usage of different data transfer size within the same paradigm. Our work compares 
+energy consumption of different data transfer sizes among other things. \\
+Gupta et al. \cite{4292824} conducted a measurement study which provided a detailed anatomy of power consumption 
+in WiFi phones that can be exploited in designing schemes to prolong the battery charge cycle. It also showed that 
+power saving mode for Wifi together with intelligent scanning techniques can reduce overall energy consumption. 
+The inference drawn from this work was that scanning algorithms have a significant impact on the battery life of 
+WiFi enabled devices \cite{4292824}. However, this thesis is more geared towards optimizing the energy cost of 
+communication after the connection has been established and data transfer needs to take place. \\

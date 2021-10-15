@@ -19,6 +19,20 @@ A level-1 auxiliary file: Chapters/Chapter7.aux
 A level-1 auxiliary file: Chapters/Appendix.aux
 The style file: ieeetr.bst
 Database file #1: ./Bib/References.bib
+Warning--entry type for "cordovahost" isn't style-file defined
+--line 207 of file ./Bib/References.bib
+Warning--entry type for "lf-lang" isn't style-file defined
+--line 221 of file ./Bib/References.bib
+Warning--entry type for "cypress" isn't style-file defined
+--line 233 of file ./Bib/References.bib
+Warning--entry type for "gpio" isn't style-file defined
+--line 234 of file ./Bib/References.bib
+Warning--entry type for "circuit" isn't style-file defined
+--line 235 of file ./Bib/References.bib
+Warning--entry type for "wiring" isn't style-file defined
+--line 236 of file ./Bib/References.bib
+Warning--entry type for "pypi" isn't style-file defined
+--line 237 of file ./Bib/References.bib
 Warning--empty booktitle in power
 Warning--empty booktitle in enloc
 Warning--empty booktitle in ener
@@ -26,47 +40,47 @@ Warning--empty booktitle in delay
 Warning--empty journal in erdos
 Warning--empty booktitle in powerscope
 Warning--empty booktitle in perfcont
+Warning--empty journal in confbal
 Warning--empty booktitle in energest
-Warning--all relevant fields are empty in cypress
-You've used 56 entries,
+You've used 58 entries,
             1876 wiz_defined-function locations,
-            782 strings with 13718 characters,
-and the built_in function-call counts, 16031 in all, are:
-= -- 1448
-> -- 702
+            802 strings with 14607 characters,
+and the built_in function-call counts, 16760 in all, are:
+= -- 1531
+> -- 721
 < -- 0
-+ -- 256
-- -- 200
-* -- 1172
-:= -- 2194
-add.period$ -- 52
-call.type$ -- 56
-change.case$ -- 54
++ -- 263
+- -- 205
+* -- 1220
+:= -- 2293
+add.period$ -- 59
+call.type$ -- 58
+change.case$ -- 57
 chr.to.int$ -- 0
-cite$ -- 65
-duplicate$ -- 839
-empty$ -- 1572
-format.name$ -- 200
-if$ -- 3977
+cite$ -- 67
+duplicate$ -- 877
+empty$ -- 1642
+format.name$ -- 205
+if$ -- 4169
 int.to.chr$ -- 0
-int.to.str$ -- 56
-missing$ -- 50
-newline$ -- 172
-num.names$ -- 50
-pop$ -- 249
+int.to.str$ -- 58
+missing$ -- 52
+newline$ -- 178
+num.names$ -- 52
+pop$ -- 262
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 609
+skip$ -- 627
 stack$ -- 0
-substring$ -- 1016
-swap$ -- 333
+substring$ -- 1072
+swap$ -- 350
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 133
-width$ -- 58
-write$ -- 508
-(There were 9 warnings)
+while$ -- 139
+width$ -- 60
+write$ -- 533
+(There were 16 warnings)
