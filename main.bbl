@@ -21,6 +21,12 @@ A.~H. Ngu, J.~Eyitayo, G.~Yang, C.~Campbell, Q.~Z. Sheng, and J.~Ni, ``An iot
   edge computing framework using cordova accessor host,'' {\em IEEE Internet of
   Things Journal}, pp.~1--1, 2021.
 
+\bibitem{gpio}
+``Gpio extension board.''
+
+\bibitem{circuit}
+``Gpio dht circuit.''
+
 \bibitem{4756414}
 Y.~Xiao, R.~S. Kalyanaraman, and A.~Yla-Jaaski, ``Energy consumption of mobile
   youtube: Quantitative measurement and analysis,'' in {\em 2008 The Second
@@ -252,5 +258,16 @@ A.~Sabovic, C.~Delgado, J.~Bauwens, E.~De~Poorter, and J.~Famaey, ``Accurate
 
 \bibitem{cypress}
 
+
+\bibitem{wiring}
+``Reference: Wiring pi,'' May 2013.
+
+\bibitem{pypi}
+``Rpi.gpio.''
+
+\bibitem{falld}
+T.~Mauldin, M.~Canby, V.~Metsis, A.~Ngu, and C.~Rivera, ``Smartfall: A
+  smartwatch-based fall detection system using deep learning,'' {\em Sensors},
+  vol.~18, p.~3363, 10 2018.
 
 \end{thebibliography}

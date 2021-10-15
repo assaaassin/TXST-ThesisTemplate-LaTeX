@@ -10,5 +10,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7}{\ignorespaces Current and Voltage values for BCM43455\relax }}{16}{figure.caption.12}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {8}{\ignorespaces A GPIO extension board \cite {gpio}\relax }}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Naming methods for WiringPi and Board \cite {gpio}\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {10}{\ignorespaces TempSens Hardware Configuration \cite {circuit}\relax }}{22}{figure.caption.15}%
+\contentsline {figure}{\numberline {11}{\ignorespaces EPB for different chunk sizes (Chunk Size (x-axis) and Energy in microJ (y-axis))\relax }}{22}{figure.caption.16}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

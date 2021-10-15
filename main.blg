@@ -28,45 +28,45 @@ Warning--empty booktitle in powerscope
 Warning--empty booktitle in perfcont
 Warning--empty booktitle in energest
 Warning--all relevant fields are empty in cypress
-You've used 51 entries,
+You've used 56 entries,
             1876 wiz_defined-function locations,
-            766 strings with 13325 characters,
-and the built_in function-call counts, 15362 in all, are:
-= -- 1392
-> -- 681
+            782 strings with 13718 characters,
+and the built_in function-call counts, 16031 in all, are:
+= -- 1448
+> -- 702
 < -- 0
-+ -- 246
-- -- 195
-* -- 1139
-:= -- 2122
-add.period$ -- 50
-call.type$ -- 51
-change.case$ -- 49
++ -- 256
+- -- 200
+* -- 1172
+:= -- 2194
+add.period$ -- 52
+call.type$ -- 56
+change.case$ -- 54
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 807
-empty$ -- 1480
-format.name$ -- 195
-if$ -- 3798
+cite$ -- 65
+duplicate$ -- 839
+empty$ -- 1572
+format.name$ -- 200
+if$ -- 3977
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 49
-newline$ -- 157
-num.names$ -- 49
-pop$ -- 221
+int.to.str$ -- 56
+missing$ -- 50
+newline$ -- 172
+num.names$ -- 50
+pop$ -- 249
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 567
+skip$ -- 609
 stack$ -- 0
-substring$ -- 1008
-swap$ -- 324
+substring$ -- 1016
+swap$ -- 333
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 131
-width$ -- 53
-write$ -- 477
+while$ -- 133
+width$ -- 58
+write$ -- 508
 (There were 9 warnings)
