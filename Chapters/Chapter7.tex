@@ -1,3 +1,57 @@
 \chapter{Conclusion}
-% \label{ch:relatedwork}
 
+In this work, we have proposed a method for estimating energy consumption of edge IoT devices, as well as 
+determining the optimal chunk size for the transmission of data over WiFi. Utilizing hardware specifications 
+of the component of interest with the help of publicly available data sheets and combining the runtime information 
+of applications, we estimate the total amount of energy consumed for communication. Energy-per-byte or EPB is then 
+used to compute the energy consumption for a range of various chunk sizes. The chunk size corresponding to the 
+lowest energy usage is the optimal chunk size for the transmission of data. \\
+
+We evaluate our approach on two real-world applications of different natures. Both \texttt{TempSens} and the 
+\texttt{Fall Detection} application have different use-cases, are deployed on different hardware devices and 
+are developed in different languages. We show that our approach can improve energy utilization of edge IoT devices 
+with regards to communication cost. We discuss the potential reasons why the \texttt{Fall Detection} application 
+failed to work and we would like to fix the application issues to make it work in the near future. \\
+
+We also present a case study where we discuss the possibility of using containers or Lingua Franca, to optimize 
+energy consumption. Even though our evaluation of this was not extensive, we found out that there may be 
+certain situations where the use of containers or Lingua Franca can improve efficiency in other aspects. For 
+example, Docker may shine where maintainability and process isolation is important and the energy overhead it adds 
+helps reduce other workloads such as costs for human-guided maintenance. Similarly, the use of Lingua Franca may 
+help design better and efficient target programs in an easy to use and easy to understand language framework. It 
+may not be the best option for energy optimization but it does help design distributed programs with fewer chances 
+of concurrency bugs. \\
+
+However, before we conclude, we would like to discuss some of the technical limitations that we encountered during 
+our study. Firstly, for the Docker case study, we found out that the Docker container is not able to run on an 
+Android device. This is due to the fact the Android kernel does not support Docker as it misses some of the key 
+features, such as namespaces support, of the Linux kernel. Secondly, to the best of our knowledge, there is no 
+container image of Android for Docker that operates on the ARM architecture. For these reasons alone, we were not 
+able to conduct the Docker study for the Fall Detection application. We also wanted to compare communication cost via 
+Bluetooth for \texttt{TempSens} but were unable to do due to \texttt{TempSensServer} being implemented on a 
+MacOS. The bluetooth bindings for several bluetooth APIs don't properly work since MacOS drivers are proprietary 
+and the best we could do was be able to scan for active devices. Moreover, Docker itself does not abstract and 
+have a virtual bluetooth adapter. It directly uses the host's adapter and the host's bluetooth stack. The hardware 
+device needs to be passed to the container much like the port. However, this means that bluetooth cost would 
+theoretically be 
+the same for the \texttt{TempSensClient} and \texttt{TempSensClientDocker} versions of the app.
+
+For LF, it currently supports four target languages \textemdash Java, C, C++, and Python. Rust support is currently 
+being added and Java support is currently being worked on. Since the current implementation of LF does not support 
+Java, it is not possible to port the Fall Detection application to be implemented in LF. Whether we would 
+get different results or not, the inability and limitation to test this in a much more conclusive manner is a 
+hinderance that we were not able to overcome simply because its not supported yet. \\
+
+To summarize, this thesis presents an energy estimation and optimal chunk size calculation method for 
+edge IoT devices. We show that this take on energy optimization has not been proposed before and evaluate it in 
+a real-world setting. Our results show that this approach can improve energy utilization of edge IoT devices in 
+terms of communication cost. In the future, we would like to adapt the optimal chunk size calculation script 
+to automatically compute the estimated power consumption of the wifi adapter given a manufacturer and 
+respective data sheet. For example, for Qualcomm WCN3620 we could parse tables corresponding to \textquotedblleft Power Consumption\textquotedblright 
+ and for Broadcom BCM43455, we could parse tables corresponding to \textquotedblleft WLAN Current Consumption\textquotedblright. 
+ This is due to the fact that manufacturers follow their own standards for providing data sheets, and 
+ consequently, all Broadcom data sheets will provide the current information under \textquotedblleft WLAN Current Consumption\textquotedblright, 
+ and same goes for other manufacturers. This way we 
+have an automated way of estimating the power consumption of an edge device's hardware as well as calculating 
+the optimal chunk size in a single script. Other than that, we would also like 
+to calculate the optimal chunk size for Bluetooth communication and analyze the results. 

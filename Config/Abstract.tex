@@ -10,14 +10,20 @@
 Recent advances in the world of IoT have significantly improved what one 
 can do with the help of personal gadgets such as smartwatches and other 
 edge devices. This improvement has lead to the inclusion of additional 
-functionality like fall detection, temperature and motion sensing etcetra. 
+functionality like fall detection, temperature and motion sensing etc. using an edge device. 
 Although this in itself is not a bad thing, however, this does pose the 
 problem of increased energy consumption on devices which are already 
-constrained by limited battery. We present our study which discusses the 
+constrained by limited battery. A portion of this energy is consumed during client-server communication 
+which is an essential part of applications that either perform major computations from sensor data on the cloud 
+or use the server to backup user data. 
+We present our study which discusses the 
 possibility of optimizing energy consumption for edge IoT devices by reducing 
 communication cost of applications by determining an optimal chunk size. We 
 present a metric \textbf{energy-per-byte} or \textbf{EPB} which helps determine 
-the optimal chunk size for respective edge devices. We evaluate our approach 
-with the help of two case studies using different edge devices and applications, 
-and we achieve considerable energy optimization depending on the app functionality 
+the optimal chunk size for respective edge devices. We also discuss a case study to (1) determine 
+whether containerized applications are energy efficient and (2) if a coordination language 
+framework like Lingua Franca can help design energy efficient applications.
+We evaluate our approach 
+with the help of two applications running on different edge devices and softwares, 
+and we show that we achieve considerable energy optimization depending on the application functionality 
 and the hardware involved.

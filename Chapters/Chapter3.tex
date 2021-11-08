@@ -23,3 +23,36 @@ power saving mode for Wifi together with intelligent scanning techniques can red
 The inference drawn from this work was that scanning algorithms have a significant impact on the battery life of 
 WiFi enabled devices \cite{4292824}. However, this thesis is more geared towards optimizing the energy cost of 
 communication after the connection has been established and data transfer needs to take place. \\
+Sahin et al. \cite{6224257} argued that even though historically, software developers leave concerns about power consumption 
+to lower-level engineers, it is possible that involving software developers to participate in that process may result 
+in more efficient applications. After detailed evaluation, they concluded that design pattern do impact energy consumption, and 
+that impact within a category is inconsistent. It addressed the lack of tools and techniques to monitor power as an issue. Our 
+work addresses the issue by presenting an energy estimation approach as well as builds upon their argument by helping 
+software developers choose an optimal chunk size for a more energy efficient design process. \\
+In another work, Sahin et al. \cite{10.1145/2652524.2652538} discuss the impact of code refactoring on energy usage. 
+With the help of an empirical study, they found out that code refactoring can not only impact energy usage but also 
+improve or deteriorate the energy efficiency of the whole program. The motivation of this thesis on the other hand is 
+not really code refactoring but optimizing energy consumption of the WiFi adapter by figuring out a more optimal value for 
+specific variables for certain API calls i.e. data transfer size for socket or HTTP APIs. \\
+Samir et al. \cite{7886906} worked on energy consumption for different Java Collection Classes. They found 
+out that different classes have different energy blueprint attached to them. In some cases, using an ArrayList is better than 
+a LinkedList while in others, the former would incur a 300\% increase energy consumption due to unoptimized memory accesses 
+and operations. Our work is more about what chunk size is better for which edge device so as to use the least amount of 
+energy. Its more about studying what variable values in a program affect the hardware usage of a physical device in what manner. \\
+The most related work is by Friedman et al. \cite{6200281} where they studied the effect of throughput on power in a 
+performance study. They compared Bluetooth with WiFi and their usage in smartphones. The study was concluded with the result 
+that power consumption is generally linear with the obtained throughput and overall, Bluetooth uses less energy than WiFi but 
+ultimately its a trade-off between range and efficiency. It also showed that different hardware and different software produce 
+different results for the same experiment, and there is no trend. One of the more interesting conclusions was that there 
+exists an upper bound which is bottlenecked by the receiver (of throughput), when exceeded, would result in more power consumption than 
+not. The additional consumption is explained by the fact that the sender has to retransmit the packets if the packet size is 
+bigger than the receiving window. Our work on the other hand, is different in a sense that we build upon the conclusions of this work 
+and show that even if there is no trend, there is a way to calculate the optimal chunk size i.e. throughput data size without 
+knowing the detailed specs of the receiver. We also show that energy usage versus chunk size is also not linear. \\
+Ngu et al. \cite{9446337} suggested that the use of an IoT middleware framework like Apache Cordova Host \cite{cordovahost} to overcome the drawbacks of cloud-based 
+computing frameworks could help improve performance in terms of local processing. Along with the increased portability, the 
+results showed that services deployed using the Cordova Accessor Host were 35\% more energy efficient than the native application. 
+Even though our work focuses on reducing energy consumption as well, we focus more on individual variables that affect energy usage 
+rather entire services. \\
+In the next section, we will discuss the methodology employed to estimate energy consumption and determining optimal chunk size in 
+our approach. 

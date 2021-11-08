@@ -7,7 +7,6 @@ A level-1 auxiliary file: Config/FairUse.aux
 A level-1 auxiliary file: Config/Dedication.aux
 A level-1 auxiliary file: Config/Acknowledgements.aux
 A level-1 auxiliary file: Config/Contents.aux
-A level-1 auxiliary file: Config/Abbreviations.aux
 A level-1 auxiliary file: Config/Abstract.aux
 A level-1 auxiliary file: Chapters/Chapter1.aux
 A level-1 auxiliary file: Chapters/Chapter2.aux
@@ -25,14 +24,28 @@ Warning--entry type for "lf-lang" isn't style-file defined
 --line 221 of file ./Bib/References.bib
 Warning--entry type for "cypress" isn't style-file defined
 --line 233 of file ./Bib/References.bib
-Warning--entry type for "gpio" isn't style-file defined
+Warning--entry type for "couchbase" isn't style-file defined
 --line 234 of file ./Bib/References.bib
-Warning--entry type for "circuit" isn't style-file defined
+Warning--entry type for "numiot" isn't style-file defined
 --line 235 of file ./Bib/References.bib
-Warning--entry type for "wiring" isn't style-file defined
+Warning--entry type for "lfsource" isn't style-file defined
 --line 236 of file ./Bib/References.bib
-Warning--entry type for "pypi" isn't style-file defined
+Warning--entry type for "mercury" isn't style-file defined
 --line 237 of file ./Bib/References.bib
+Warning--entry type for "ok" isn't style-file defined
+--line 238 of file ./Bib/References.bib
+Warning--entry type for "wcn3620" isn't style-file defined
+--line 239 of file ./Bib/References.bib
+Warning--entry type for "gpio" isn't style-file defined
+--line 240 of file ./Bib/References.bib
+Warning--entry type for "circuit" isn't style-file defined
+--line 241 of file ./Bib/References.bib
+Warning--entry type for "wiring" isn't style-file defined
+--line 242 of file ./Bib/References.bib
+Warning--entry type for "pypi" isn't style-file defined
+--line 243 of file ./Bib/References.bib
+Warning--empty journal in confbal
+Warning--empty journal in 10.1145/2652524.2652538
 Warning--empty booktitle in power
 Warning--empty booktitle in enloc
 Warning--empty booktitle in ener
@@ -40,47 +53,46 @@ Warning--empty booktitle in delay
 Warning--empty journal in erdos
 Warning--empty booktitle in powerscope
 Warning--empty booktitle in perfcont
-Warning--empty journal in confbal
 Warning--empty booktitle in energest
-You've used 58 entries,
+You've used 65 entries,
             1876 wiz_defined-function locations,
-            802 strings with 14607 characters,
-and the built_in function-call counts, 16760 in all, are:
-= -- 1531
-> -- 721
+            826 strings with 15526 characters,
+and the built_in function-call counts, 17648 in all, are:
+= -- 1601
+> -- 744
 < -- 0
-+ -- 263
-- -- 205
-* -- 1220
-:= -- 2293
-add.period$ -- 59
-call.type$ -- 58
-change.case$ -- 57
++ -- 275
+- -- 210
+* -- 1251
+:= -- 2381
+add.period$ -- 66
+call.type$ -- 65
+change.case$ -- 64
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 877
-empty$ -- 1642
-format.name$ -- 205
-if$ -- 4169
+cite$ -- 75
+duplicate$ -- 922
+empty$ -- 1786
+format.name$ -- 210
+if$ -- 4411
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 52
-newline$ -- 178
-num.names$ -- 52
-pop$ -- 262
+int.to.str$ -- 65
+missing$ -- 53
+newline$ -- 199
+num.names$ -- 53
+pop$ -- 316
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 627
+skip$ -- 672
 stack$ -- 0
-substring$ -- 1072
-swap$ -- 350
+substring$ -- 1085
+swap$ -- 354
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 139
-width$ -- 60
-write$ -- 533
-(There were 16 warnings)
+warning$ -- 10
+while$ -- 140
+width$ -- 67
+write$ -- 572
+(There were 23 warnings)

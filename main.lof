@@ -1,18 +1,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces The basic edge computing architecture\relax }}{5}{figure.caption.6}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Edge computing based IoT architecture\relax }}{5}{figure.caption.7}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Average daily energy drain breakdown of 5 groups of 1520 apps \cite {9017997}\relax }}{7}{figure.caption.8}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Online learning control of display brightness \cite {6972472}\relax }}{8}{figure.caption.9}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Design pattern of accessors \cite {7006378}\relax }}{10}{figure.caption.10}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Design pattern of accessors \cite {9446337}\relax }}{11}{figure.caption.11}%
+\contentsline {figure}{\numberline {1}{\ignorespaces The basic edge computing architecture \cite {8123913}\relax }}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Edge computing based IoT architecture \cite {8123913}\relax }}{6}{figure.caption.7}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Average daily energy drain breakdown of 5 groups of 1520 apps \cite {9017997}\relax }}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Online learning control of display brightness \cite {6972472}\relax }}{9}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7}{\ignorespaces Current and Voltage values for BCM43455\relax }}{17}{figure.caption.12}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Current and Voltage values for BCM43455\relax }}{19}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8}{\ignorespaces A GPIO extension board \cite {gpio}\relax }}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Naming methods for WiringPi and Board \cite {gpio}\relax }}{22}{figure.caption.14}%
-\contentsline {figure}{\numberline {10}{\ignorespaces TempSens Hardware Configuration \cite {circuit}\relax }}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {11}{\ignorespaces EPB for different chunk sizes (Chunk Size (x-axis) and Energy in microJ (y-axis))\relax }}{23}{figure.caption.16}%
+\contentsline {figure}{\numberline {6}{\ignorespaces A GPIO extension board \cite {gpio}\relax }}{24}{figure.caption.12}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Naming methods for WiringPi and Board \cite {gpio}\relax }}{25}{figure.caption.13}%
+\contentsline {figure}{\numberline {8}{\ignorespaces TempSens Hardware Configuration \cite {circuit}\relax }}{26}{figure.caption.14}%
+\contentsline {figure}{\numberline {9}{\ignorespaces EPB for different chunk sizes (Chunk Size (x-axis) and Energy in microJ (y-axis)) - Raspberry Pi 4\relax }}{27}{figure.caption.15}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Power Consumption values from WCN3620 Datasheet \cite {wcn3620}\relax }}{29}{figure.caption.16}%
+\contentsline {figure}{\numberline {11}{\ignorespaces EPB for different chunk sizes (Chunk Size (x-axis) and Energy in milliJ (y-axis)) - Huawei Watch\relax }}{30}{figure.caption.17}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {12}{\ignorespaces A sample Dockerfile\relax }}{33}{figure.caption.18}%
+\contentsline {figure}{\numberline {13}{\ignorespaces EPB for different chunk sizes (Chunk Size (x-axis) and Energy in microJ (y-axis)) - Raspberry Pi 4 (Docker)\relax }}{34}{figure.caption.19}%
 \addvspace {10\p@ }

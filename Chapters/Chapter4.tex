@@ -10,21 +10,22 @@ amounts of time. This is especially important in the healthcare sector where a d
 vitals should be able to do so for prolonged lengths of time. \\
 In this thesis, our study focused on optimizing energy consumption for communication. Most applications 
 on an edge device usually communicate with a remote server to exchange different data and it varies from 
-application to application. But within these apps, communication is a core aspect and is widely ignored. 
-The best general practice used when designing these apps is to send data in sizes multiples of 2, which 
+application to application. But within these applications, communication is a core aspect which is not 
+being investigated by researchers. 
+The best general practice used when designing these applications is to send data in sizes multiples of 2, which 
 generally means faster communication without unwanted packet drops but on the other hand, is no where near 
 optimal. This is due to the fact that each edge device may have different hardware and different software 
 versions, and the energy cost for communication for each possible variation of these is different \cite{6200281}. It has no 
 optimal trend, therefore, the best practice is to use general values of chunk sizes that the protocol 
 can easily handle. Our work focuses on communication cost because most of the times other hardware related 
-factors are not flexible or would otherwise comprise the integrity of the task. \\
+factors are not flexible or would otherwise compromise the integrity of the task. \\
 
 This work is divided into two portions. First, we present a pretty straightforward way to estimate an 
 application's energy consumption over time. Next, we present an approach to compute optimal chunk sizes 
 for respective edge devices. We evaluate and confirm whether this optimal chunk size approach consumes less 
-energy or not with the help of our energy estimation approach, on two real-world apps. \\
+energy or not with the help of our energy estimation approach, on two real-world applications. \\
 \section{Estimating Energy Usage}
-There have been other approaches in the past to estimate energy consumption of apps \cite{6606555} but we 
+There have been other approaches in the past to estimate energy consumption of applications \cite{6606555} but we 
 adopt an approach that is similar to energest \cite{energest} which is an energy profiling approach for Contiki OS. 
 We combine runtime information from applications with static information from data sheets of specific 
 hardware components to estimate energy consumption. Before getting into the details, we will define some 
@@ -68,7 +69,7 @@ in this case would be to take the mean average sum of values for different modes
     \label{fig:bcm}
 \end{figure}
 
-Given this information, we can estimate the power \texttt{P} that the wifi adapter would use in this case when its 
+Given this information, we can estimate the power \texttt{P} that the wifi adapter would use in this case when it is 
 turned on. Consider an app \texttt{A} which finishes executing in about \texttt{t} seconds. The total energy 
 consumed (by the wifi adapter) by running \texttt{A} would then be calculated by \texttt{E = P * t}. \\
 In order to calculate the estimated energy for specific block of code, such as ones which handle communication, all one 
@@ -79,7 +80,7 @@ individually measure current and voltage values of actual devices. Given that se
 consumption off of publicly available data sheets and runtime information from the app itself is a 
 pretty reliable way to gather the required data. \\
 \section{Calculating Optimal Chunk Size}
-As mentioned before, our study focuses on optimizing communication cost of apps for IoT edge devices. 
+As mentioned before, our study focuses on optimizing communication cost of applications for IoT edge devices. 
 Even though the best practices involved in this case do perform well for average case, our hypothesis 
 is that after a communication pipe is established between the client and the server, having data sent or 
 received in different chunk sizes could have an impact on the energy consumption of the whole process. 
@@ -93,7 +94,7 @@ consumption but our work is done under the assumption that these factors, such a
 sensor, the disk I/O operations etc. differ heavily from use-case to use-case and any alteration in code 
 functionality to them, may affect their usage in real world. For example, a device monitoring a patient's 
 heartbeat continuously is bound to use more energy than, let's say, monitoring every five minutes. 
-However, in such critical examples, these types of optimizations severely undermine the actual 
+However, in these kinds of critical health monitoring applications, such types of optimizations severely undermine the actual 
 functionality of the app. Therefore, our approach addresses a factor that is independent of the sensor 
 usage in such a context and can potentially work on diverse examples. \\
 To better explain how we calculate the optimal chunk size, we will first define energy-per-byte or EPB. 
@@ -121,9 +122,40 @@ list of different chunk sizes of order \texttt{$2^{n}$} where \texttt{n} by defa
 1 and 30 (included). The upper limit can be adjusted depending on the use case of the program. It then 
 proceeds to send data in different chunk sizes and then measure the time it took for the communication to take 
 place. This time is then used to calculated the overall energy consumption for sending a specific amount of 
-data. \\
+data. It must be mentioned here that the chunk size is also bounded by the protocol being used and 
+the local disk space of the device. 
+It is provided as a pseudocode in algorithm \ref{alg:two} on the next page. For both evaluation subjects, 
+we use the same pseudocode but had to implement it in Python and Java for both applications respectively. \\
+\SetKwComment{Comment}{/* }{ */}
+
+\begin{algorithm}
+\caption{Pseudocode for determining optimal chunk size}\label{alg:two}
+\Comment{n is the upper limit of chunk size as exponent of 2, p is the power computed from datasheet }
+\KwData{$n \geq 0, p$}
+\Comment{Array of energy consumption for each chunk size}
+\KwResult{$energyArray$}
+$N \gets n$\;
+$P \gets p$\;
+% $timeArray \gets \phi$\;
+$energyArray \gets \phi$\;
+\While{$N \neq 0$}{
+     \Comment{Create a byte array of the given size using a helper function}
+     $array \gets CreateByteArray(2^N)$\;
+     \Comment{Start a timer}
+     $start \gets GetCurrentTime()$\;
+     \Comment{Send the data to the server}
+     $SendToServer(array)$\;
+     \Comment{Stop the timer and compute the difference}
+     $end \gets GetCurrentTime()$\;
+     $executionTime \gets end-start$\;
+     \Comment{Compute the EPB and store it in array}
+     $energy \gets P * executionTime$\;
+     $EPB \gets energy/2^N$\;
+     $energyArray \gets energyArray \cup EPB$\;
+}
+\end{algorithm}
 This is a pretty straightforward but novel approach to aid programmers in developing applications for 
 a target edge device where they can optimize the communication cost in terms of energy. In some use cases, the 
 difference is considerable while in others it may not be that much. In short, it depends on the nature of the app 
 itself. The following section will clarify more as to why it is as we describe our experimental and nature of the 
-apps, and discuss our results. \\
+applications, and discuss our results. \\

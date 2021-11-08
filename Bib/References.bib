@@ -230,7 +230,13 @@ title = {Accurate Online Energy Consumption Estimation of IoT Devices Using Ener
 isbn = {978-3-030-33505-2},
 doi = {10.1007/978-3-030-33506-9_32}
 }
-@online{cypress, title={BCM43455 Data Sheet}, howpublished={\url{https://www.cypress.com/file/298786/download}}} 
+@online{cypress, title={BCM43455 Data Sheet}, howpublished={\url{https://www.cypress.com/file/298786/download}}}
+@online{couchbase, title={Couchbase}, howpublished={\url{https://www.couchbase.com/about}}}
+@online{numiot, title={Interconnected Devices via Statisa}, howpublished={\url{https://www.statista.com/statistics/1101442/iot-number-of-connected-devices-worldwide/}}}
+@online{lfsource, title={LF Example}, howpublished={\url{https://github.com/lf-lang/lingua-franca/wiki/Writing-Reactors-in-Python}}}
+@online{mercury, title={Mercury TXST Server}, howpublished={\url{https://mercury.cs.txstate.edu}}}
+@online{ok, title={OkHttp}, howpublished={\url{https://github.com/square/okhttp}}}
+@online{wcn3620, title={WCN3620 IC}, howpublished={\url{https://developer.qualcomm.com/qfile/29369/lm80-p0436-33_b_wcn3620_wireless_connectivity_ic_device_spec.pdf}}}
 @online{gpio, title={GPIO Extension board}, howpublished={\url{https://docs.sunfounder.com/projects/davinci-kit/en/latest/gpio_extension_board.html}}, journal={GPIO Extension Board - SunFounder davinci-kit-for-raspberry-pi documentation}} 
 @online{circuit, title={GPIO DHT Circuit}, howpublished={\url{https://docs.sunfounder.com/projects/davinci-kit/en/latest/2.2.3_dht-11.html}}} 
 @online{wiring, title={Reference: Wiring pi}, howpublished={\url{http://wiringpi.com/reference/}}, journal={Wiring Pi | GPIO Interface library for the Raspberry Pi}, year={2013}, month={May}} 
@@ -257,3 +263,64 @@ doi = {10.3390/s18103363}
   year = 2009
 }
 @INPROCEEDINGS{4292824,  author={Gupta, Ashima and Mohapatra, Prasant},  booktitle={2007 4th Annual IEEE Communications Society Conference on Sensor, Mesh and Ad Hoc Communications and Networks},   title={Energy Consumption and Conservation in WiFi Based Phones: A Measurement-Based Study},   year={2007},  volume={},  number={},  pages={122-131},  doi={10.1109/SAHCN.2007.4292824}}
+@article{flinn,
+author = {Flinn, Jason and Satyanarayanan, Mahadev},
+year = {2001},
+month = {02},
+pages = {},
+title = {Energy-Aware Adaptation for Mobile Applications},
+volume = {33},
+journal = {ACM SIGOPS Operating Systems Review},
+doi = {10.1145/346152.346170}
+}
+@INPROCEEDINGS{6224257,  author={Sahin, Cagri and Cayci, Furkan and Gutiérrez, Irene Lizeth Manotas and Clause, James and Kiamilev, Fouad and Pollock, Lori and Winbladh, Kristina},  booktitle={2012 First International Workshop on Green and Sustainable Software (GREENS)},   title={Initial explorations on design pattern energy usage},   year={2012},  volume={},  number={},  pages={55-61},  doi={10.1109/GREENS.2012.6224257}}
+@article{10.1145/2652524.2652538,
+author = {Sahin, Cagri and Pollock, Lori and Clause, James},
+title = {How Do Code Refactorings Affect Energy Usage?},
+year = {2014},
+isbn = {9781450327749},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2652524.2652538},
+doi = {10.1145/2652524.2652538},
+abstract = {Context: Code refactoring's benefits to understandability, maintainability and extensibility
+are well known enough that automated support for refactoring is now common in IDEs.
+However, the decision to apply such transformations is currently performed without
+regard to the impacts of the refactorings on energy consumption. This is primarily
+due to a lack of information and tools to provide such relevant information to developers.
+Unfortunately, concerns about energy efficiency are rapidly becoming a high priority
+concern in many environments, including embedded systems, laptops, mobile devices,
+and data centers.Goal: We aim to address the lack of information about the energy
+efficiency impacts of code refactorings.Method: We conducted an empirical study to
+investigate the energy impacts of 197 applications of 6 commonly-used refactorings.Results:
+We found that refactorings can not only impact energy usage but can also increase
+and decrease the amount of energy used by an application. In addition, we also show
+that metrics commonly believed to correlate with energy usage are unlikely to be able
+to fully predict the impact of applying a refactoring.Conclusion: The results from
+this and similar studies could be used to augment IDEs to help software developers
+build more energy efficient software.},
+booktitle = {Proceedings of the 8th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement},
+articleno = {36},
+numpages = {10},
+keywords = {code refactoring, empirical study, energy usage},
+location = {Torino, Italy},
+series = {ESEM '14}
+}
+@INPROCEEDINGS{7886906,  author={Hasan, Samir and King, Zachary and Hafiz, Munawar and Sayagh, Mohammed and Adams, Bram and Hindle, Abram},  booktitle={2016 IEEE/ACM 38th International Conference on Software Engineering (ICSE)},   title={Energy Profiles of Java Collections Classes},   year={2016},  volume={},  number={},  pages={225-236},  doi={10.1145/2884781.2884869}}
+@article{DBLP:journals/corr/SantosMSH17,
+  author    = {Eddie Antonio Santos and
+               Carson McLean and
+               Christopher Solinas and
+               Abram Hindle},
+  title     = {How does Docker affect energy consumption? Evaluating workloads in
+               and out of Docker containers},
+  journal   = {CoRR},
+  volume    = {abs/1705.01176},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1705.01176},
+  eprinttype = {arXiv},
+  eprint    = {1705.01176},
+  timestamp = {Mon, 13 Aug 2018 16:47:46 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/SantosMSH17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}

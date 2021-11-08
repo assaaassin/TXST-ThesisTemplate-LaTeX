@@ -61,7 +61,7 @@ chunk size was run on the Raspberry Pi 4. \\
     \begin{center}
         \includegraphics[scale=0.23]{Figs/epbpi.png}    
     \end{center}
-    \caption{EPB for different chunk sizes (Chunk Size (x-axis) and Energy in microJ (y-axis))}
+    \caption{EPB for different chunk sizes (Chunk Size (x-axis) and Energy in microJ (y-axis)) - Raspberry Pi 4}
     \label{fig:epbpi}
 \end{figure}
 
@@ -77,7 +77,7 @@ and see the bottom-left and bottom-right plots, you realize that the energy usag
 There's clearly a global minima present and it will be different for different devices due to varying 
 hardware and software configuration but with our work we can definitely find it. \\
 Based on the values obtained from this experiment, and then replace them with the default values in \texttt{TempSensClient}, 
-the total amount of time for which battery life was prolonged solely due to saving energy in communication cost. 
+the total amount of time for which battery life was prolonged solely due to saving energy in communication cost 
 was about 3 minutes. However, one other use-case of this approach is to be able to determine the intervals at 
 which one should communicate data, if it allows. In the case of \texttt{TempSens}, its quite flexible as 
 the information being communicated is not time sensitive and the use-case is not that critical. This suggests that 
@@ -90,4 +90,71 @@ not have mattered much if the energy usage of the whole device was dependent on 
 much more energy as compared to the wifi adapter as we will discuss it in the next experimental setup. \\
 
 \section{Experimental Setup \textemdash Fall Detection App}
-For this experiment, we test our approach on the Fall Detection App \cite{falld}.
+For this experiment, we test our approach on the Fall Detection App \cite{falld}. It is a real-world fall detection app 
+that uses machine learning to predict whether a person wearing a smartwatch has fallen or not. Unlike the app mentioned in 
+\cite{falld}, the version we test our approach on has majority of the app functionality on the smartwatch itself, whereas the 
+mobile phone is just used to create and load profiles. It uses accelerometer data to predict whether a fall has occurred or not. 
+It continuously logs this information and stores it in a local Couchbase database \cite{couchbase}. The app is written in 
+native Java/Android for WearOS. The app works in a simple manner. First, since the app by default has a generic detection 
+model, the user needs to calibrate it for themselves by wearing the app for around 3 hours. The model is then retrained with 
+personalized accelerometer data for more accurate predictions. The server is maintained on a campus Mercury server \cite{mercury} which 
+is not publicly accessable to keep confidential data safe. It also houses the training script to retrain the models. The app itself 
+communicates data with this server using HTTP POST. The app uses OkHttp \cite{ok} as a communication API between the client and the server.\\
+The smartwatch used is Huawei Watch 2 Sport Model LEO-BX9 running WearOS version 2.14. The partner app to create and load profiles 
+is running on an LG Nexus 5 running Android 8.0. The Huawei Watch 2 Sport uses a Qualcomm chipset housing a WCN3620 wireless 
+connectivity integrated circuit \cite{wcn3620}. \\
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[scale=0.35]{Figs/wcndatasheet.png}    
+    \end{center}
+    \caption{Power Consumption values from WCN3620 Datasheet \cite{wcn3620}}
+    \label{fig:wcn}
+\end{figure}
+
+Figure \ref{fig:wcn} shows the relevant power consumption information from the WCN3620 datasheet. Just like BCM43455, we can see there 
+are two primary sources of voltage. One of them is $V_{xo}$ or $V_{cc}$ which is the voltage directly supplied by the battery/power source. 
+The other one, $V_{I/O}$ is the voltage that the wifi adapter receives from the CPU indirectly. In order to compute the estimated power, 
+we calculate the mean average sum of 2.4G, 11g and Rx values. We use 11g ones because the protocol standard being used is 802.11g. The other 
+two voltage values are the operating voltages of the circuit and in this context, do not affect the calculations for the estimated 
+power consumption. \\
+To compute the power, we multiply current by voltage for each respective voltage and then take the average. This comes out to be 0.001737 Watts. 
+In order to determine the optimal chunk size, we developed a simple script written in Java and deployed as an android app on the watch to 
+run the experiments and extract a set of values. It uses the same communication API and protocols as the fall detection app. By utilizing the 
+calculated power above, we were able to plot a graph between chunk size and energy consumption based off runtime information of the fall detection app.
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[scale=0.35]{Figs/energyandroid.png}    
+    \end{center}
+    \caption{EPB for different chunk sizes (Chunk Size (x-axis) and Energy in milliJ (y-axis)) - Huawei Watch}
+    \label{fig:energyand}
+\end{figure}
+
+Figure \ref{fig:energyand} shows that the optimal chunk size for the Huawei Watch 2 is 4 Megabytes or $2^{22}$ bytes. Compare this with 
+the default chunk size being used in the fall detection app of 340 Kilobytes which is about 12 times less than the optimal chunk size. 
+However, this also required altering the communication interval of the app to one hour to have enough data accumulated to be able to send it.
+This does not interfere with the actual detection functionality of the app. The overall reduction in wifi communication cost by using this 
+chunk size is around 77.97\%. In this context, it is a significant improvement however, in terms of raw battery time saved, it is just around 
+1.5 minutes. We would also like to mention here that the application failed to upload data to the server when we 
+changed the chunk size to the optimal one. During our initial evaluation while running the Fall Detection application 
+using Android Studio, it was successfully able to write data to the output stream that sends data to the server. Based off 
+the energy estimation readings from that run, the improvement in battery time was around 1.5 minutes. However, when the 
+application was run normally (without Android Studio), it was unable to upload the data to the server even though the 
+data was being sent. There are a number of reasons for which this could be happening. First, the server may have an 
+unintentional bottleneck that we are not aware of. Second, it may be possible that there is not sufficient 
+space on the device to log an hour of data. Lastly, it could be something wrong with the implementation of the 
+application \textemdash particularly how Couchbase is used to store the data in a local database. \\ 
+
+Now let's talk about why the improvement is as small as 1.5 minutes. This is due to the fact that Huawei Watch 2 Sport in itself is a highly optimized smartwatch in terms of energy consumption. 
+One of its selling point is its extended battery life due to lower energy consumption. However, our approach is still able to optimize the 
+communication cost albeit only extending the battery life for a few minutes. One other factor that impacts this, is that the core functionality 
+of the app itself is more focused on two things \textemdash displaying relevant information on the UI and constantly logging accelerometer data. 
+Moreover, the constant logging is something that can not be altered in this case because the use case of the app is critical in nature. For 
+instance, if we log data in sync with communication i.e. we only read and save sensor data 
+when information needs to be transmitted to the server, it will definitely save more energy but it severely undermines the functionality of the app and 
+ultimately fails to detect some critical fall cases at times when its not logging sensor data. This also shows why our work is more focused on 
+communication cost only as this property is something that will rarely impact the use case of an app. \\
+Moreover, the apps in our study are already somewhat optimized and well-written. Our approach would make even more significant impact if 
+a developer wants to write an app from scratch and then matches the communication interval with the optimal chunk size i.e. when enough data is 
+collected. In the next section, we will discuss a case study on comparing energy consumption of native apps, and apps in a container environment. 

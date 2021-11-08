@@ -14,7 +14,8 @@ IoT has become one of the essential components of people's home and workplace ex
 continue to impact the daily life of people and its not just limited to technology. IoT has been reported 
 to be one of the most important technologies that will impact US interests in 2025 \cite{7879243}. 
 The number of interconnected physical devices has already transcended the human population for a couple 
-years now. In 2012, there were 9 billion interconnected physical devices \cite{8058399}. This rapid increase 
+years now. In 2012, there were 9 billion interconnected physical devices \cite{8058399} and by the end of 
+2020, total number of interconnected devices rose up to 21.6 billion \cite{numiot}. This rapid increase 
 in the number of mobile devices suggested that conventional centralized cloud computing would struggle 
 to satisfy the Quality of Service (QoS) for many applications. However, with the introduction of 5G 
 technology, edge computing becomes a viable and key solution to solve this issue \cite{7568592,7414384,6568922}. 
@@ -24,7 +25,7 @@ bandwidth consumption and network latency. Figure \ref{fig:edgearch} shows a bas
     \begin{center}
         \includegraphics[scale=0.35]{Figs/edge_arch.png}    
     \end{center}
-    \caption{The basic edge computing architecture}
+    \caption{The basic edge computing architecture \cite{8123913}}
     \label{fig:edgearch}
 \end{figure}
 
@@ -34,7 +35,7 @@ edge computing share some characteristics which is further clarified by figure \
     \begin{center}
         \includegraphics[scale=0.35]{Figs/edge_iot.png}    
     \end{center}
-    \caption{Edge computing based IoT architecture}
+    \caption{Edge computing based IoT architecture \cite{8123913}}
     \label{fig:edgeiot}
 \end{figure}
 
@@ -70,14 +71,14 @@ reduce the overall energy consumption of edge devices. Researchers have used mac
 categorize applications during execution and choose a suitable pre-existing power plan \cite{power,7851469,4838819}. 
 However, it was later realized that this does not capture dynamic workload variations \cite{5751506}. Later on, a new 
 technique was proposed which involved phase level instrumentation to collect workload statistics at runtime. Essentially, 
-the worload was divided into snippets and performance application programming interface calls were inserted between 
+the workload was divided into snippets and performance application programming interface calls were inserted between 
 each snippet. The data collected from each snippet was then used to control the power states of processing elements \cite{dypo}. 
 There are other ML based approaches as well where some are better than the other using Reinforcement Learning and 
 Imitation Learning \cite{7092630,7163527,8449105,8607043,DBLP:journals/corr/abs-1011-0686,7934357,8770273}. Other than 
 display optimations \cite{7544394,Dong2009PowersavingCT,187123}, wireless radio optimizations \cite{enloc,ener,min,delay,194920,180309} and 
 main memory optimizations \cite{7266864}, there have also been software and user-centric optimizations. A variety of 
 OS level energy management techniques have been  proposed in literature \cite{erdos,mob}. Runtime software profiling 
-can identify the most power and energy hungry resournces that should be targetted by dynamic managament techniques. 
+can identify the most power and energy hungry resources that should be targeted by dynamic management techniques. 
 Powerscope \cite{powerscope} is one such example of a tool. It maps energy consumption of active applications to program 
 structure. It further combines hardware instrumentation to measure current levels with kernel software support to 
 perform statistical sampling of system activity. For mobile devices, the display is the main user interface. User 
@@ -101,13 +102,13 @@ resources of the same host. However, a new model has emerged which has been quit
 \textit{Containers} \cite{turnbull_2014} allow multiple user-space instances and are generally lightweight. They have 
 limited overhead compared to Virtual Machines (VMs) and unlike virtualization, paravirtualization or full virtualization, 
 they do not require an emulation layer to run. Instead they use the host OS \cite{6903537}. One such notable example 
-of a container framework is Docker \cite{turnbull_2014}. It unarguably started the container movement. Docker is open source 
+of a container framework is Docker \cite{turnbull_2014}. It unarguably started the container movement. Docker is an open source 
 system that provides an automated way to deplot applications inside containers \cite{8360360}. \\
 Docker consists of multiple core components, described quite aptly by \cite{turnbull_2014}: 
 \begin{itemize}
     \item \textbf{Docker client and daemon: }the client is basically a command-line binary which performs requests for the daemon. The daemon itself can either be run remotely or on the same host.
-    \item \textbf{Docker images: }labelled as the \textquotedblleft source code \textquotedblright for the containers, images are the building blocks of Docker.
-    \item \textbf{Registries: }used to store the images built. There are two types of registeries, public and private
+    \item \textbf{Docker images: }labelled as the \textquotedblleft source code\textquotedblright \ for the containers, images are the building blocks of Docker.
+    \item \textbf{Registries: }used to store the images built. There are two types of registries, public and private
     \item \textbf{Docker container: }applications and services are packaged inside containers. They are released from images and may contain one or more services.
 \end{itemize}
 
@@ -117,44 +118,44 @@ tolerance \cite{perfcont}. With containers being very flexible and having the ab
 the important question to ask is whether they can help preserve energy in certain scenarios. This will be further discussed 
 in a later section. \\
 
-Another technology that is quite interesting is edge based IoT middleware frameworks. One good example of is the 
-Apache Cordova \cite{cordovahost}. A typical IoT middleware comprises of a three-layer architecture i.e. edge, gateway and cloud \cite{7582463}. 
-A middleware is generally designed to be the intermediary between IoT devices and applications. The interaction is performed 
-with the help of an \textit{accessor}. Accessors provide the abstraction for smart things across different hardware or 
-software platforms to interact. They further allow for smarter interactions, sharing and portability. They are usually 
-implemented in Javascript to keep it lightweight and ubiquitous, allowing things to communicate to share information 
-in a message oriented fashion \cite{9446337}. An accessor has inputs, by which the swarmlet makes requests, and outputs, 
-by which the service issues responses. The responses can be asynchronous and an accessor does not need to have an input; 
-it can spontaneouly produce outputs \cite{7006378}. This is also depicted in Figure \ref{fig:accessor}. Accessor hosts function 
-as a middleware service which is used to instantiate and execute accessors. They have their own specific set of actions 
-that they can perform but the most common accessor hosts include Browser, Node and Cordova. The first supports 
-executing accessors in a web browser whereas a Node host is just and Node.js engine with support for common host's 
-capabilities \cite{9446337}. A Cordova host is an extension of the Apache Cordova's cross mobile program development 
-platform. It is used for building application using basic web development elements such as HTML, CSS and JS, in a 
-unified code base and targeted to multiple platforms like Android and IOS. Other than writing the plugin for the respective 
-target device, no additional programming is required as its javascript interface interacts with native language APIs 
-of physical or virtual IoT devices. 
+% Another technology that is quite interesting is edge based IoT middleware frameworks. One good example of is the 
+% Apache Cordova \cite{cordovahost}. A typical IoT middleware comprises of a three-layer architecture i.e. edge, gateway and cloud \cite{7582463}. 
+% A middleware is generally designed to be the intermediary between IoT devices and applications. The interaction is performed 
+% with the help of an \textit{accessor}. Accessors provide the abstraction for smart things across different hardware or 
+% software platforms to interact. They further allow for smarter interactions, sharing and portability. They are usually 
+% implemented in Javascript to keep it lightweight and ubiquitous, allowing things to communicate to share information 
+% in a message oriented fashion \cite{9446337}. An accessor has inputs, by which the swarmlet makes requests, and outputs, 
+% by which the service issues responses. The responses can be asynchronous and an accessor does not need to have an input; 
+% it can spontaneouly produce outputs \cite{7006378}. This is also depicted in Figure \ref{fig:accessor}. Accessor hosts function 
+% as a middleware service which is used to instantiate and execute accessors. They have their own specific set of actions 
+% that they can perform but the most common accessor hosts include Browser, Node and Cordova. The first supports 
+% executing accessors in a web browser whereas a Node host is just and Node.js engine with support for common host's 
+% capabilities \cite{9446337}. A Cordova host is an extension of the Apache Cordova's cross mobile program development 
+% platform. It is used for building application using basic web development elements such as HTML, CSS and JS, in a 
+% unified code base and targeted to multiple platforms like Android and IOS. Other than writing the plugin for the respective 
+% target device, no additional programming is required as its javascript interface interacts with native language APIs 
+% of physical or virtual IoT devices. 
 
-\begin{figure}
-    \begin{center}
-        \includegraphics[scale=0.35]{Figs/accessor.png}    
-    \end{center}
-    \caption{Design pattern of accessors \cite{7006378}}
-    \label{fig:accessor}
-\end{figure}
+% \begin{figure}
+%     \begin{center}
+%         \includegraphics[scale=0.35]{Figs/accessor.png}    
+%     \end{center}
+%     \caption{Design pattern of accessors \cite{7006378}}
+%     \label{fig:accessor}
+% \end{figure}
 
-The architecture of Cordova Accessor Host is given by Figure \ref{fig:cordova}. Briefly, it consists of a webview and 
-a Cordova Plugin. Webview comprises of an implementation for the Common Host, an implementation for accessor host 
-specific to Cordova and a bundle of all community developed accessors that can be shared. This is what makes up the 
-Cordova Accessor Host. The swarmlet.js component acts as an entry method, used to launch the accessor pipeline. \\
+% The architecture of Cordova Accessor Host is given by Figure \ref{fig:cordova}. Briefly, it consists of a webview and 
+% a Cordova Plugin. Webview comprises of an implementation for the Common Host, an implementation for accessor host 
+% specific to Cordova and a bundle of all community developed accessors that can be shared. This is what makes up the 
+% Cordova Accessor Host. The swarmlet.js component acts as an entry method, used to launch the accessor pipeline. \\
 
-\begin{figure}
-    \begin{center}
-        \includegraphics[scale=0.35]{Figs/cordova.png}    
-    \end{center}
-    \caption{Design pattern of accessors \cite{9446337}}
-    \label{fig:cordova}
-\end{figure}
+% \begin{figure}
+%     \begin{center}
+%         \includegraphics[scale=0.35]{Figs/cordova.png}    
+%     \end{center}
+%     \caption{Design pattern of accessors \cite{9446337}}
+%     \label{fig:cordova}
+% \end{figure}
 
 The usage of actors in concurrent programming is a common occurrence. Actors are concurrent objects that communicate 
 by sending each other messages \cite{lingua}. In the recent years, another framework called Lingua Franca, has been 
@@ -162,10 +163,10 @@ proposed and developed. Lingua Franca or LF, is a polyglot coordination language
 which can range anywhere from low level embedded code to distributed cloud and edge applications \cite{lf-lang}. An LF 
 program consists of reactors and reactions. Reactions define the functionality of the specified reactors in target 
 languages. Reactors are similar to actors in a sense that they are used to send messages to each other. However, these 
-messages are timestamped and the reactors are deterministic by default. Any non determinism has to explicitly specified within 
+messages are unique in a sense that they are timestamped and the reactors are deterministic by default. Any non determinism has to be explicitly specified within 
 the LF program. It must be noted that LF is a coordination language and not a programming language, and is only 
 used to write interfaces and composition of reactors \cite{lf-lang}. Going into additional details about the inner workings 
 of LF and its components is out of scope for this study however, the general abstraction of an application's 
-functionality regardless of the target language is something that is similar to the Cordova Host. One question one would 
-like to ask is whether code generated by LF performs better than native code. This too, like Docker, will be discussed in a 
-later section with the help of case study.
+functionality regardless of the target language is something that is similar to the Apache Cordova Host \cite{cordovahost}. One question one would 
+like to ask is whether code generated by LF performs better than native code in terms of energy consumption. This too, like Docker, will be discussed in a 
+later section with the help of a case study.
